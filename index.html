@@ -31,35 +31,64 @@
         </div>
 
         <div class="  text-white border-t sm:border-none hidden sm:block mt-4 sm:mt-0">
-            <a href="#" class="p-3 text-[16px] sm:text-[18px] text-[#F65023]"> Home </a>
-            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> About </a>
-            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> Skills </a>
-            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> Portfolio </a>
-            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> Contact </a>
-            <button class="bg-white rounded-lg font-medium text-[#2E1853] text-[16px] sm:text-[18px] py-1 px-2 cursor-pointer hover:bg-[#483D8B]  hover:border border-x-white hover:text-[#b11010] shadow-md shadow-slate-800 transition">Hire Me!</button>
+            <a href="#" class="p-3 text-[16px] sm:text-[18px] text-[#F65023] transition duration-300"> Home </a>
+            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023] transition duration-300"> About </a>
+            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023] transition duration-300"> Skills </a>
+            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023] transition duration-300"> Portfolio </a>
+            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023] transition duration-300"> Contact </a>
+            <button class="bg-white rounded-lg font-medium text-[#2E1853] text-[16px] sm:text-[18px] py-1 px-2 cursor-pointer hover:bg-[#483D8B]  hover:border border-x-[#b11010] hover:text-[#FFFFFF] shadow-md shadow-slate-800 transition duration-300">Hire Me!</button>
         </div>
-
+        <!-- 
         <div id="nav-close" class="block sm:hidden">
             <i class="fa-solid fa-bars text-white"></i>
+        </div>-->
         </div>
-        
         </div>
-        </div>
+
+        <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-[#707070] text-2xl focus:outline-none">
+        &#9776;
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden mt-4 cursor-pointer">
+    <ul class="flex flex-col gap-4 text-center">
+      <li><a class="text-base text-[#707070] hover:text-[#B68C5A]" href="#">Home</a></li>
+      <li><a class="text-base text-[#707070] hover:text-[#B68C5A]" href="#">About</a></li>
+      <li><a class="text-base text-[#707070] hover:text-[#B68C5A]" href="#">Skills</a></li>
+      <li><a class="text-base text-[#707070] hover:text-[#B68C5A]" href="#">Portfolio</a></li>
+      <li><a class="text-base text-[#707070] hover:text-[#B68C5A]" href="#">Contact</a></li>
+      <li>
+        <button class="w-full mt-2 bg-[#B68C5A] px-4 py-2 rounded-lg text-white font-semibold hover:bg-[#36454F] transition duration-700">
+          Hire Me
+        </button>
+      </li>
+    </ul>
+  </div>
     </nav>
     
     <!-- Hero Section -->
-    <header>
-        <div class="flex items-center justify-center">
-            <div class="container mx-auto shadow-md shadow-lime-50 rounded-lg px-10 h-[80vh] border-t-0 sm:flex justify-around place-items-center text-center">
+    <header class="relative w-full h-[700px] overflow-hidden">
+        <!-- Background Video -->
+        <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover opacity-80 z-0" src="assets/video.mp4" type="video/mp4">
+        </video>
+        <!-- Overlay Content -->
+        <div class="relative z-10  flex flex-col-reverse sm:flex-row items-center justify-center">
+            
+            <div class="container mx-auto shadow-md shadow-lime-50 rounded-lg px-10  border-t-0 sm:flex justify-around place-items-center text-center">
             <div class="hero text-white relative sm:w-[100%]">
                 <h1 class="text-[15px] sm:text-4xl font-bold mb-4 pt-8 sm:pt-0 mt-10 sm:mt-0 sm:mb-4 sm:leading-14"> I'm a FrontEnd Developers_Stay With <br> <span class="text-[#F65023] text-[22px] sm:text-[36px]"> Shiful Islam </span></h1>
                 <div class="mt-5 sm:mt-10">
-                <a href="assets/Resume-Shiful.png" download class="download-btn transition cursor-pointer text-[16px] sm:text-xl font-medium text-gray-800 bg-[#FFFAF0] py-2 sm:py-3 px-4 sm:px-7 rounded-full  mb-10 sm:-mb-5 hover:bg-[#483D8B] hover:border border-x-white hover:text-[#b11010] shadow-md shadow-slate-800"> Download CV <span class="text-[#F65023] font-mono font-medium text-[18px] sm:text-[20px]"> Learn More <svg class="w-7 inline-block animate-bounce "  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <a href="assets/Resume-Shiful.png" download class="download-btn cursor-pointer text-[16px] sm:text-xl font-medium text-gray-800 bg-[#FFFAF0] py-2 sm:py-3 px-4 sm:px-7 rounded-full  mb-10 sm:-mb-5 hover:bg-[#483D8B] hover:border border-x-[#b11010] hover:text-[#FFFFFF] shadow-md shadow-slate-800 transition duration-300"> Download CV <span class="text-[#F65023] font-mono font-medium text-[18px] sm:text-[20px]"> Learn More <svg class="w-7 inline-block animate-bounce "  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                 </svg>
             </span></a>
-                </div>
+            </div>
 
+            <!-- Social Icons Section -->
             <div>
                 <ul class="flex justify-center md:flex sm:flex mt-10 sm:mt-10 gap-3 cursor-pointer animate-pulse">
                     <a href="https://www.facebook.com/AhmedShwapon">
@@ -76,7 +105,6 @@
                     </a>
                 </ul>
             </div>
-
             </div>
 
             <!-- Mushroom Viewer Model -->
@@ -91,20 +119,19 @@
             <model-viewer id="firefly" class="fixed top-[50%] left-[50%] sm:left-[70%] sm:w-[50px] sm:h-[50px] pointer-events-none z-[999]" src="assets/firefly.glb" alt="3D Firefly"  loading="lazy" auto-rotate camera-controls disable-zoom style="transform: translate(-50%, -50%) scale(0.3);">
             </model-viewer>
             </div>
-   
         </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <div id="about" class="grid sm:flex justify-between items-center my-10 right-0 w-full min-h-screen mt-60 sm:mt-10">
+    <div id="about" class="grid sm:flex justify-between items-center my-10 right-0 w-full min-h-screen mt-100 lg:mt-0 sm:mt-10">
 
-        <video autoplay loop muted class="relative top-0 left-0 w-full h-[750px] object-cover opacity-80" src="assets/video.mp4" type="video/mp4" />
-        </video>
+        <!-- <video autoplay loop muted class="relative top-0 left-0 w-full h-[750px] object-cover opacity-80" src="assets/video.mp4" type="video/mp4">
+        </video> -->
 
         <div class="absolute grid sm:flex sm:w-[100%] sm:h-[850px] justify-center items-center">
             <div class="sm:w-[50%] grid sm:flex justify-center items-end">
-            <img class="w-[300px] sm:w-[450px] animate-pulse shadow-md  rounded-full shadow-lime-50 mt-20 sm:mt-0" src="assets/abouit.jpg" alt="">
+            <img class="w-[250px] lg:w-[450px] animate-pulse shadow-md  rounded-full shadow-lime-50 mt-20 sm:mt-0" src="assets/about.png" alt="">
         </div>
 
         <div class="w-[100%] sm:w-[55%] grid justify-center items-center  p-8">
@@ -112,16 +139,14 @@
            <h2 class="text-[24px] font-semibold text-[#F65023] mb-5 ml-2 text-center sm:text-start">My Skills <i class="text-white fa-solid fa-fill-drip animate-pulse pl-2"></i></h2>
            <p class="text-[16px] font-light text-[#e3e3e3] w-[100%]  border-b-2 border-[#F65023] pb-5 ">I’m a dedicated frontend web developer with solid experience in building fast, responsive, and interactive web applications using today’s most powerful tools. My core strength lies in Tailwind CSS, which I use to design clean, responsive user interfaces with precision and efficiency. It helps me build visually appealing layouts that are easy to maintain and scale. For dynamic and interactive functionality, I work primarily with JavaScript and React.js. React allows me to build reusable components and manage application state effectively, ensuring smooth and efficient user experiences. Expanding beyond the frontend, I also work with Node.js and Next.js to develop full-stack applications. Next.js enables server-side rendering and better performance, while Node.js handles backend operations and APIs. For database management, I use MongoDB, a flexible NoSQL database that supports scalable data structures. I also rely on Firebase for authentication, hosting, and real-time database features, which help me deploy and manage apps quickly. I enjoy turning ideas into functional, modern web solutions. My focus is on writing clean code, following best practices, and continuously learning new technologies to stay ahead in web development. <br> Let’s collaborate to bring your digital vision to life.</p>
         </div>
-        </div>
-
-        
+        </div>   
     </div>
 
     <!-- Skills Section -->
-    <section class="bg-[url(/assets/portfolio-bg1.png)] bg-cover bg-center mt-70 sm:mt-10">
-        <div id="skills" class="container mx-auto">
-        <div class="">
-            <h2 class="text-white text-4xl font-bold font-mono text-center mb-30"><svg class="w-7 inline-block text-[#F65023] animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+    <section class="w-full h-[auto] lg:h-[850px] bg-none lg:bg-[url(/assets/portfolio-bg1.png)] bg-cover bg-center mt-130 lg:mt-10">
+        <div id="skills" class="">
+        <div class="container mx-auto">
+            <h2 class="text-white text-4xl font-bold font-mono text-center mb-20 lg:mb-30"><svg class="w-7 inline-block text-[#F65023] animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
             </svg>
             Relevant Skills </h2>
@@ -169,7 +194,7 @@
     </section>
 
     <!-- Recent Work Section -->
-    <section class="bg-[url(/assets/portfolio-bg.png)] bg-cover"  id="recent_work" class="">
+    <section class="bg-none lg:bg-[url(/assets/portfolio-bg.png)] bg-cover">
         <div class="grid justify-center text-center mt-40">
             <h2 class="text-white text-4xl font-bold font-mono  mb-8"><svg class="w-7 inline-block text-[#F65023] animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
@@ -178,7 +203,8 @@
             <p class="max-w-2xl text-[#fafafa] sm:text-[18px] text-center sm:mb-10">We are transform our ideas and desires into our responsive works.</p>
         </div>
 
-        <div class="relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full text-[#fafafa] bg-[#483D8B] font-semibold border border-lime-100 overflow-hidden transition md:h-12 md:text-base border-x-[#b11010]">
+            <div class="relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full text-[#fafafa] bg-[#483D8B] font-semibold border border-lime-100 overflow-hidden transition md:h-12 md:text-base border-x-[#b11010]">
+
             <!-- Indicator -->
             <div class="indicator absolute h-9 my-auto top-0 bottom-0 left-0 rounded-full bg-[#1e0244] md:h-11">
             </div>
@@ -197,6 +223,7 @@
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white mix-blend-screen rounded-full blur-[100px] opacity-50"></div>
 
             <ul class="grid grid-cols-1 gap-5 lg:gap-10 md:grid-cols-2 pt-20 container mx-auto items-center">
+
                 <!-- e_commerce -->
                 <li class="work_card e_commerce relative bg-white dark:bg-[#1e0244] p-2 rounded-2xl border border-transparent hover:border-[#fafafa] duration-300 overflow-hidden lg:p-8 cursor-pointer">
                     <img class="w-full" src="assets/projects/project1.jpeg" alt="recent works">
@@ -290,7 +317,7 @@
 
                <div class="grid gap-3">
                   <div class="inline-flex space-x-2 items-center">
-                        <ion-icon class="text-[#008000] text-2xl" name="call"></ion-icon>
+                        <ion-icon class="text-[#008000] text-2xl" name="logo-whatsapp"></ion-icon>
                         <span class="text-[#fafafa] text-[16px]">+880 1711-037548</span>
                     </div>
                     <div class="inline-flex space-x-2 items-center">
@@ -304,14 +331,15 @@
                </div>
 
                <div class="flex space-x-3 text-2xl text-[#fafafa] mb-10 sm:mb-0">
-                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.facebook.com/AhmedShwapon"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/shiful-islam-7a9783250"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/shiful33"><ion-icon name="logo-github"></ion-icon></a>
                    </div>
             </div>
 
             <div id="table_form" class="bg-white sm:w-[40%] h-[400px]  rounded-xl shadow-lg p-8">
                <form action="https://api.web3forms.com/submit" method="POST" class="grid grid-cols-1 space-y-4">
+
     <!-- Required Access Key -->
     <input type="hidden" name="access_key" value="a5db407b-6dd0-4a47-9b29-39af72b07dac">
 
@@ -330,9 +358,9 @@
         <textarea name="message" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-purple-300 text-gray-800 text-[14px] mt-2" rows="4" placeholder="Type Message"></textarea>
     </div>
 
-    <button class="inline-block bg-[#F65023] self-center text-[#fafafa] text-xl font-medium py-2 px-4 rounded-lg cursor-pointer hover:bg-[#1E90FF] transition">Send Message</button>
+    <button class="inline-block bg-[#F65023] self-center text-[#fafafa] text-xl font-medium py-2 px-4 rounded-lg cursor-pointer hover:bg-[#2e1853] transition duration-300">Send Message</button>
 </form>
-            </div>
+        </div>
         </div>
     </div>
 
@@ -342,8 +370,8 @@
         <div class="grid md:flex sm:dlex justify-center items-center gap-12 sm:gap-8 sm:m-0 sm:gap-10">
 
            <div>
-              <p class="text-[#F65023] font-mono text-3xl font-bold animate-bounce text-center"> My Clients </p>
-              <h2 class="text-[#FFFFFF] text-lg sm:text-xl md:text-2xl text-center">My Take Care of More <span class="underline underline-offset-8 decoration-orange-600">Than 50K</span> <br> Customers</h2>
+              <p class="text-[#F65023] font-mono text-3xl font-bold animate-bounce text-start lg:text-center"> My Clients </p>
+              <h2 class="text-[#FFFFFF] text-lg sm:text-xl md:text-2xl text-start lg:text-center">My Take Care of More <span class="underline underline-offset-8 decoration-orange-600">Than 50K</span> <br> Customers</h2>
            </div>
 
            <div class="grid sm:flex items-center">
@@ -365,32 +393,41 @@
               <h2 class="text-gray-400 text-sm md:text-lg sm:text-xl font-semibold">Support: <span class="underline underline-offset-8 decoration-orange-600">shwapon.joti@gmail.com</span> <br> (Available : 08:00am to 10:00pm) </h2>
            </div>
 
-           <div class="text-center gap-8 sm:m-0 sm:gap-10 text-sm md:text-lg sm:text-xl font-semibold">
+           <!-- Footer Social Icons -->
+           <div class="text-start lg:text-center gap-8 sm:m-0 sm:gap-10 text-sm md:text-lg sm:text-xl font-semibold">
             <h3 class="text-[#FFFFFF]">Follow Me</h3>
-            <div class="flex justify-center md:flex sm:flex mt-4 gap-2 cursor-pointer animate-pulse">
+            <div class="flex text-start lg:text-center md:flex sm:flex mt-4 gap-2 cursor-pointer animate-pulse">
                 <a href="https://www.facebook.com/AhmedShwapon">
-                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/facebook.png" alt="icon-image">
+                    <img class="w-9 lg:w-10 h-9 lg:h-10" src="assets/icons/facebook.png" alt="icon-image">
                 </a>
                 <a href="https://www.linkedin.com/in/shiful-islam-7a9783250/">
-                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/linkedin.png" alt="icon-image">
+                    <img class="w-9 lg:w-10 h-9 lg:h-10" src="assets/icons/linkedin.png" alt="icon-image">
                 </a>
                 <a href="https://app.netlify.com/teams/shiful33/projects">
-                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/netlify-t.png" alt="icon-image">
+                    <img class="w-9 lg:w-10 h-9 lg:h-10" src="assets/icons/netlify-t.png" alt="icon-image">
                 </a>
                 <a href="https://github.com/shiful33">
-                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/github.png" alt="icon-image">
+                    <img class="w-9 lg:w-10 h-9 lg:h-10" src="assets/icons/github.png" alt="icon-image">
                 </a>
             </div>
            </div>
-
         </div>
     </div>
 
 
-    
+    <!-- Add this JS at the bottom -->
+    <script>
+       const toggleBtn = document.getElementById('menu-toggle');
+       const mobileMenu = document.getElementById('mobile-menu');
+       toggleBtn.addEventListener('click', () => {
+       mobileMenu.classList.toggle('hidden');
+    });
+    </script>
+
+    <!-- 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> -->
 
 </body>
 </html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- GLB File Preload Link -->
+    <link rel="preload" href="assets/mushroom.glb" as="fetch" type="model/gltf-binary" crossorigin="anonymous" />
+
+    <!-- Font Awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-[#2E1853] font-[sora]">
+    <!-- Nav Section -->
+    <nav class="flex md:flex sm:flex items-center justify-between bg-[#2E1853] shadow-xl sticky top-0 z-10">
+        <div class="container mx-auto">
+            <div class="sm:flex justify-between py-2 items-center text-center">
+            <div class="text-center mb-6 mt-4 sm:mb-4">
+            <a href="#" class="text-white text-xl shadow-md p-4 shadow-lime-50 rounded-2xl sm:text-3xl font-bold animate-pulse">Shiful <span class="text-[#F65023]">Islam</span></a>
+        </div>
+
+        <div class="  text-white border-t sm:border-none hidden sm:block mt-4 sm:mt-0">
+            <a href="#" class="p-3 text-[16px] sm:text-[18px] text-[#F65023]"> Home </a>
+            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> About </a>
+            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> Skills </a>
+            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> Portfolio </a>
+            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> Contact </a>
+            <button class="bg-white rounded-lg font-medium text-[#2E1853] text-[16px] sm:text-[18px] py-1 px-2 cursor-pointer hover:bg-[#483D8B]  hover:border border-x-white hover:text-[#b11010] shadow-md shadow-slate-800 transition">Hire Me!</button>
+        </div>
+
+        <div id="nav-close" class="block sm:hidden">
+            <i class="fa-solid fa-bars text-white"></i>
+        </div>
+        
+        </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header>
+        <div class="flex items-center justify-center">
+            <div class="container mx-auto shadow-md shadow-lime-50 rounded-lg px-10 h-[80vh] border-t-0 sm:flex justify-around place-items-center text-center">
+            <div class="hero text-white relative sm:w-[100%]">
+                <h1 class="text-[15px] sm:text-4xl font-bold mb-4 pt-8 sm:pt-0 mt-10 sm:mt-0 sm:mb-4 sm:leading-14"> I'm a FrontEnd Developers_Stay With <br> <span class="text-[#F65023] text-[22px] sm:text-[36px]"> Shiful Islam </span></h1>
+                <div class="mt-5 sm:mt-10">
+                <a href="assets/Resume-Shiful.png" download class="download-btn transition cursor-pointer text-[16px] sm:text-xl font-medium text-gray-800 bg-[#FFFAF0] py-2 sm:py-3 px-4 sm:px-7 rounded-full  mb-10 sm:-mb-5 hover:bg-[#483D8B] hover:border border-x-white hover:text-[#b11010] shadow-md shadow-slate-800"> Download CV <span class="text-[#F65023] font-mono font-medium text-[18px] sm:text-[20px]"> Learn More <svg class="w-7 inline-block animate-bounce "  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+            </span></a>
+                </div>
+
+            <div>
+                <ul class="flex justify-center md:flex sm:flex mt-10 sm:mt-10 gap-3 cursor-pointer animate-pulse">
+                    <a href="https://www.facebook.com/AhmedShwapon">
+                        <img class="w-9 sm:w-10 h-9 sm:h-10" src="assets/icons/facebook-t.png" alt="icon-image">
+                    </a>
+                    <a href="https://www.linkedin.com/in/shiful-islam-7a9783250/">
+                        <img class="w-9 sm:w-10 h-9 sm:h-10" src="assets/icons/linkedin-t.png" alt="icon-image">
+                    </a>
+                    <a href="https://github.com/shiful33">
+                        <img class="w-9 sm:w-10 h-9 sm:h-10" src="assets/icons/github-t.png" alt="icon-image">
+                    </a>
+                    <a href="https://app.netlify.com/teams/shiful33/projects">
+                        <img class="w-9 sm:w-10 h-9 sm:h-10" src="assets/icons/netlify-t.png" alt="icon-image">
+                    </a>
+                </ul>
+            </div>
+
+            </div>
+
+            <!-- Mushroom Viewer Model -->
+            <div class="sm:w-[45%]">
+            <section id="profile">
+            <model-viewer id="mushroom" class="w-[400px] sm:w-[550px] h-[300px] sm:h-[500px] m-auto inline-block shadow shadow-b-2" src="assets/mushroom.glb" alt="3D Mushroom" auto-rotate camera-controls disable-zoom shadow-intensity="0"
+            disable-default-lighting reveal="auto" loading="eager">
+            </model-viewer>
+            </section>
+
+            <!-- Firefly Viewer Model -->
+            <model-viewer id="firefly" class="fixed top-[50%] left-[50%] sm:left-[70%] sm:w-[50px] sm:h-[50px] pointer-events-none z-[999]" src="assets/firefly.glb" alt="3D Firefly"  loading="lazy" auto-rotate camera-controls disable-zoom style="transform: translate(-50%, -50%) scale(0.3);">
+            </model-viewer>
+            </div>
+   
+        </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <div id="about" class="grid sm:flex justify-between items-center my-10 right-0 w-full min-h-screen mt-60 sm:mt-10">
+
+        <video autoplay loop muted class="relative top-0 left-0 w-full h-[750px] object-cover opacity-80" src="assets/video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="absolute grid sm:flex sm:w-[100%] sm:h-[850px] justify-center items-center">
+            <div class="sm:w-[50%] grid sm:flex justify-center items-end">
+            <img class="w-[300px] sm:w-[450px] animate-pulse shadow-md  rounded-full shadow-lime-50 mt-20 sm:mt-0" src="assets/abouit.jpg" alt="">
+        </div>
+
+        <div class="w-[100%] sm:w-[55%] grid justify-center items-center  p-8">
+           <h1 class="text-white font-bold text-[24px] sm:text-[32px] font-[poppins] mb-5 shadow-lg text-center sm:w-45 rounded-lg">About Me</h1>
+           <h2 class="text-[24px] font-semibold text-[#F65023] mb-5 ml-2 text-center sm:text-start">My Skills <i class="text-white fa-solid fa-fill-drip animate-pulse pl-2"></i></h2>
+           <p class="text-[16px] font-light text-[#e3e3e3] w-[100%]  border-b-2 border-[#F65023] pb-5 ">I’m a dedicated frontend web developer with solid experience in building fast, responsive, and interactive web applications using today’s most powerful tools. My core strength lies in Tailwind CSS, which I use to design clean, responsive user interfaces with precision and efficiency. It helps me build visually appealing layouts that are easy to maintain and scale. For dynamic and interactive functionality, I work primarily with JavaScript and React.js. React allows me to build reusable components and manage application state effectively, ensuring smooth and efficient user experiences. Expanding beyond the frontend, I also work with Node.js and Next.js to develop full-stack applications. Next.js enables server-side rendering and better performance, while Node.js handles backend operations and APIs. For database management, I use MongoDB, a flexible NoSQL database that supports scalable data structures. I also rely on Firebase for authentication, hosting, and real-time database features, which help me deploy and manage apps quickly. I enjoy turning ideas into functional, modern web solutions. My focus is on writing clean code, following best practices, and continuously learning new technologies to stay ahead in web development. <br> Let’s collaborate to bring your digital vision to life.</p>
+        </div>
+        </div>
+
+        
+    </div>
+
+    <!-- Skills Section -->
+    <section class="bg-[url(/assets/portfolio-bg1.png)] bg-cover bg-center mt-70 sm:mt-10">
+        <div id="skills" class="container mx-auto">
+        <div class="">
+            <h2 class="text-white text-4xl font-bold font-mono text-center mb-30"><svg class="w-7 inline-block text-[#F65023] animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+            </svg>
+            Relevant Skills </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 m-8 gap-8 sm:m-0 sm:gap-10">
+               <div class="bg-[#1e0244] p-10 rounded-lg text-center cursor-pointer shadow-md shadow-lime-100 animate-pulse">
+                <img class="w-20 mx-auto" src="assets/Tailwind-CSS.png" alt="">
+                <h3 class="text-white text-xl sm:text-2xl font-semibold my-8">Tailwind - 85%</h3>
+                <p class="text-white text-sm sm:text-md">Tailwind CSS is a utility-first framework for rapidly building responsive, modern, and customizable user interfaces.</p>
+               </div>
+
+               <div class="bg-[#1e0244] p-10 rounded-lg text-center cursor-pointer shadow-md shadow-lime-100 animate-pulse">
+                <img class="w-20 mx-auto" src="assets/js.png" alt="">
+                <h3 class="text-white text-xl sm:text-2xl font-semibold my-8">JavaScript - 75%</h3>
+                <p class="text-white text-sm sm:text-md">JavaScript is a versatile scripting language that powers interactive, dynamic behavior on modern web applications.</p>
+               </div>
+
+               <div class="bg-[#1e0244] p-10 rounded-lg text-center cursor-pointer shadow-md shadow-lime-100 animate-pulse">
+                <img class="w-20 mx-auto" src="assets/react.png" alt="">
+                <h3 class="text-white text-xl sm:text-2xl font-semibold my-8">React - 70%</h3>
+                <p class="text-white text-sm sm:text-md">React is a JavaScript library for building fast, reusable, and dynamic user interfaces with components.</p>
+               </div>
+
+               <div class="bg-[#1e0244] p-10 rounded-lg text-center cursor-pointer shadow-md shadow-lime-100 animate-pulse">
+                <img class="w-30 mx-auto" src="assets/next.js.png" alt="">
+                <h3 class="text-white text-xl sm:text-2xl font-semibold my-8">Next.js - 70%</h3>
+                <p class="text-white text-sm sm:text-md">Next.js is a React framework enabling server-side rendering, fast performance, and SEO-friendly web applications.</p>
+               </div>
+
+               <div class="bg-[#1e0244] p-10 rounded-lg text-center cursor-pointer shadow-md shadow-lime-100 animate-pulse">
+                <img class="w-20 mx-auto" src="assets/mongodb.png" alt="">
+                <h3 class="text-white text-xl sm:text-2xl font-semibold my-8">MongoDB - 70%</h3>
+                <p class="text-white text-sm sm:text-md">MongoDB is a flexible NoSQL database that stores data in scalable, JSON-like document structures.</p>
+               </div>
+
+               <div class="bg-[#1e0244] p-10 rounded-lg text-center cursor-pointer shadow-md shadow-lime-100 animate-pulse">
+                <img class="w-20 mx-auto" src="assets/firebase.png" alt="">
+                <h3 class="text-white text-xl sm:text-2xl font-semibold my-8">Firebase - 65%</h3>
+                <p class="text-white text-sm sm:text-md">Firebase is a backend platform offering real-time database, authentication, hosting, and analytics for web apps.</p>
+               </div>
+
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Recent Work Section -->
+    <section class="bg-[url(/assets/portfolio-bg.png)] bg-cover"  id="recent_work" class="">
+        <div class="grid justify-center text-center mt-40">
+            <h2 class="text-white text-4xl font-bold font-mono  mb-8"><svg class="w-7 inline-block text-[#F65023] animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+            </svg>
+            Relevent Works </h2>
+            <p class="max-w-2xl text-[#fafafa] sm:text-[18px] text-center sm:mb-10">We are transform our ideas and desires into our responsive works.</p>
+        </div>
+
+        <div class="relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full text-[#fafafa] bg-[#483D8B] font-semibold border border-lime-100 overflow-hidden transition md:h-12 md:text-base border-x-[#b11010]">
+            <!-- Indicator -->
+            <div class="indicator absolute h-9 my-auto top-0 bottom-0 left-0 rounded-full bg-[#1e0244] md:h-11">
+            </div>
+
+            <button class="tab relative block h-8 px-3 rounded-full text-[#F65023] md:h-10 md:px-6 cursor-pointer" data-tab="all">All</button>
+
+            <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6 cursor-pointer" data-tab="e-commerce">e-Commerce</button>
+
+            <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6 cursor-pointer" data-tab="landing">Landing</button>
+
+            <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6 cursor-pointer" data-tab="business">Business</button>
+        </div>
+
+        <div class=" relative rounded-3xl mb-50 animate-pulse">
+            <!-- Blob -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white mix-blend-screen rounded-full blur-[100px] opacity-50"></div>
+
+            <ul class="grid grid-cols-1 gap-5 lg:gap-10 md:grid-cols-2 pt-20 container mx-auto items-center">
+                <!-- e_commerce -->
+                <li class="work_card e_commerce relative bg-white dark:bg-[#1e0244] p-2 rounded-2xl border border-transparent hover:border-[#fafafa] duration-300 overflow-hidden lg:p-8 cursor-pointer">
+                    <img class="w-full" src="assets/projects/project1.jpeg" alt="recent works">
+
+                    <div class="absolute bottom-[-100%] p-5 lg:p-8">
+                        <div class="flex items-center justify-between bg-gradient-to-r from-[#483D8B] to-[#14095c] text-white p-5 rounded-t-2xl">
+                            <div>
+                                <p class="text-2xl font-bold lg:text-3xl">Design</p>
+                                <p class="">It those intricate users experience</p>
+                            </div>
+
+                            <div class="text-2xl rotate-45">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- e_commerce -->
+                <li class="work_card e_commerce relative bg-white dark:bg-[#1e0244] p-2 rounded-2xl border border-transparent hover:border-[#fafafa] duration-300 overflow-hidden lg:p-8 cursor-pointer">
+                    <img class="w-full" src="assets/projects/project2.jpeg" alt="recent works">
+
+                    <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                        <div class="flex items-center justify-between bg-gradient-to-r from-[#483D8B] to-[#14095c] text-white p-5 rounded-t-2xl">
+                            <div>
+                                <p class="text-2xl font-bold lg:text-3xl">Design</p>
+                                <p class="">It those intricate users experience</p>
+                            </div>
+
+                            <div class="text-2xl rotate-45">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- landing -->
+                <li class="work_card landing relative bg-white dark:bg-[#1e0244] p-2 rounded-2xl border border-transparent hover:border-[#fafafa] duration-300 overflow-hidden lg:p-8 cursor-pointer">
+                    <img class="w-full" src="assets/projects/project3.jpeg" alt="recent works">
+
+                    <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                        <div class="flex items-center justify-between bg-gradient-to-r from-[#483D8B] to-[#14095c] text-white p-5 rounded-t-2xl">
+                            <div>
+                                <p class="text-2xl font-bold lg:text-3xl">Design</p>
+                                <p class="">It those intricate users experience</p>
+                            </div>
+
+                            <div class="text-2xl rotate-45">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- business -->
+                <li class="work_card business relative bg-white dark:bg-[#1e0244] p-2 rounded-2xl border border-transparent hover:border-[#fafafa] duration-300 overflow-hidden lg:p-8 cursor-pointer">
+                    <img class="w-full" src="assets/projects/project4.jpeg" alt="recent works">
+
+                    <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                        <div class="flex items-center justify-between bg-gradient-to-r from-[#483D8B] to-[#14095c] text-white p-5 rounded-t-2xl">
+                            <div>
+                                <p class="text-2xl font-bold lg:text-3xl">Design</p>
+                                <p class="">It those intricate users experience</p>
+                            </div>
+
+                            <div class="text-2xl rotate-45">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <div class="mb-30">
+        <div>
+            <h2 class="text-white text-4xl font-bold font-mono text-center mb-30"><svg class="w-7 inline-block text-[#F65023] animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+            </svg>
+            Contact Me </h2>
+        </div>
+
+        <div class="grid sm:flex bg-[#1E0244] w-[100%] sm:w-[60%] sm:h-[600px] sm:gap-20 mx-auto justify-center items-center p-10 rounded-2xl">
+            <div id="text_form" class="grid grid-cols-1 sm:w-[50%] gap-10">
+               <div class="">
+                  <h1 class="text-[#fafafa] text-2xl font-semibold font-[sora]">Get In Touch</h1>
+                  <p class="text-[#fefefe] text-[16px] font-light mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eaque eligendi doloremque explicabo, at amet.</p>
+               </div>
+
+               <div class="grid gap-3">
+                  <div class="inline-flex space-x-2 items-center">
+                        <ion-icon class="text-[#008000] text-2xl" name="call"></ion-icon>
+                        <span class="text-[#fafafa] text-[16px]">+880 1711-037548</span>
+                    </div>
+                    <div class="inline-flex space-x-2 items-center">
+                        <ion-icon class="text-[#1E90FF] text-2xl" name="mail-unread"></ion-icon></ion-icon>
+                        <span class="text-[#fafafa] text-[16px]">shwapon.joti@gmail.com</span>
+                    </div>
+                    <div class="inline-flex space-x-2 items-center">
+                        <ion-icon class="text-[#F65023] text-2xl" name="location"></ion-icon>
+                        <span class="text-[#fafafa] text-[16px]">Faridpur Sadar, Bangladesh.</span>
+                    </div>
+               </div>
+
+               <div class="flex space-x-3 text-2xl text-[#fafafa] mb-10 sm:mb-0">
+                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                   </div>
+            </div>
+
+            <div id="table_form" class="bg-white sm:w-[40%] h-[400px]  rounded-xl shadow-lg p-8">
+               <form action="https://api.web3forms.com/submit" method="POST" class="grid grid-cols-1 space-y-4">
+    <!-- Required Access Key -->
+    <input type="hidden" name="access_key" value="a5db407b-6dd0-4a47-9b29-39af72b07dac">
+
+    <div>
+        <label for="name">Your Name</label><br>
+        <input name="name" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-purple-300 text-gray-800 text-[14px] mt-2" type="text" placeholder="Your Name">
+    </div>
+
+    <div>
+        <label for="email">Your Email</label><br>
+        <input name="email" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-purple-300 text-gray-800 text-[14px] mt-2" type="email" placeholder="Your Email">
+    </div>
+
+    <div>
+        <label for="message">Message</label><br>
+        <textarea name="message" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-purple-300 text-gray-800 text-[14px] mt-2" rows="4" placeholder="Type Message"></textarea>
+    </div>
+
+    <button class="inline-block bg-[#F65023] self-center text-[#fafafa] text-xl font-medium py-2 px-4 rounded-lg cursor-pointer hover:bg-[#1E90FF] transition">Send Message</button>
+</form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer" class="bg-[#1E0244] py-30">
+
+        <div class="grid md:flex sm:dlex justify-center items-center gap-12 sm:gap-8 sm:m-0 sm:gap-10">
+
+           <div>
+              <p class="text-[#F65023] font-mono text-3xl font-bold animate-bounce text-center"> My Clients </p>
+              <h2 class="text-[#FFFFFF] text-lg sm:text-xl md:text-2xl text-center">My Take Care of More <span class="underline underline-offset-8 decoration-orange-600">Than 50K</span> <br> Customers</h2>
+           </div>
+
+           <div class="grid sm:flex items-center">
+              <div class="sm:px-8">
+                <ul class="text-lg md:text-xl sm:text-2xl">
+                    <li class="text-[#FFFFFF] ">
+                        <a class="hover:text-gray-400" href="#">Career</a> <br>
+                        <a class="hover:text-gray-400" href="#">Log In</a> <br>
+                        <a class="hover:text-gray-400" href="#">Tearms & Condition</a> <br>
+                        <a class="hover:text-gray-400" href="#">Privecy & Policy</a> <br>
+                        <a class="hover:text-gray-400" href="#">Contact Me</a> <br>
+                    </li>
+                </ul>
+              </div>
+           </div>
+
+           <div class="sm:px-4">
+              <p class="text-gray-400 font-mono text-sm md:text-lg sm:text-xl font-semibold"> East Khabashpur, Taltola, Faridpur </p>
+              <h2 class="text-gray-400 text-sm md:text-lg sm:text-xl font-semibold">Support: <span class="underline underline-offset-8 decoration-orange-600">shwapon.joti@gmail.com</span> <br> (Available : 08:00am to 10:00pm) </h2>
+           </div>
+
+           <div class="text-center gap-8 sm:m-0 sm:gap-10 text-sm md:text-lg sm:text-xl font-semibold">
+            <h3 class="text-[#FFFFFF]">Follow Me</h3>
+            <div class="flex justify-center md:flex sm:flex mt-4 gap-2 cursor-pointer animate-pulse">
+                <a href="https://www.facebook.com/AhmedShwapon">
+                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/facebook.png" alt="icon-image">
+                </a>
+                <a href="https://www.linkedin.com/in/shiful-islam-7a9783250/">
+                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/linkedin.png" alt="icon-image">
+                </a>
+                <a href="https://app.netlify.com/teams/shiful33/projects">
+                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/netlify-t.png" alt="icon-image">
+                </a>
+                <a href="https://github.com/shiful33">
+                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/github.png" alt="icon-image">
+                </a>
+            </div>
+           </div>
+
+        </div>
+    </div>
+
+
+    
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+</body>
+</html>

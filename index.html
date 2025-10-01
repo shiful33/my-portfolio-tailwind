@@ -23,64 +23,49 @@
 
 <body class="bg-[#2E1853] font-[sora]">
     <!-- Nav Section -->
-    <nav class="lg:flex items-center justify-between bg-[#2E1853] shadow-xl sticky top-0 z-10">
+    <nav class="flex md:flex sm:flex items-center justify-between bg-[#2E1853] shadow-xl sticky top-0 z-10">
         <div class="container mx-auto">
             <div class="sm:flex justify-between py-2 items-center text-center">
             <div class="text-center mb-6 mt-4 sm:mb-4">
             <a href="#" class="text-white text-xl shadow-md p-4 shadow-lime-50 rounded-2xl sm:text-3xl font-bold animate-pulse">Shiful <span class="text-[#F65023]">Islam</span></a>
         </div>
 
-        <div class="  text-white border-t sm:border-none hidden md:block lg:block mt-4 sm:mt-0">
-            <a href="#" class="p-3 text-[16px] sm:text-[18px] text-[#F65023] transition duration-300"> Home </a>
-            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023] transition duration-300"> About </a>
-            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023] transition duration-300"> Skills </a>
-            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023] transition duration-300"> Portfolio </a>
-            <a href="#" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023] transition duration-300"> Contact </a>
-            <button class="bg-white rounded-lg font-medium text-[#2E1853] text-[16px] sm:text-[18px] py-1 px-2 cursor-pointer hover:bg-[#483D8B]  hover:border border-x-[#b11010] hover:text-[#FFFFFF] shadow-md shadow-slate-800 transition duration-300">Hire Me!</button>
-        </div>
-        <!-- Mobile Menu Button -->
-        <div id="menu-toggle" class="block sm:hidden">
-           <i class="fa-solid fa-bars text-white"></i>
-        </div>
-        </div>
+        <div class="  text-white border-t sm:border-none hidden sm:block mt-4 sm:mt-0">
+            <a href="#home" class="p-3 text-[16px] sm:text-[18px] text-[#F65023]"> Home </a>
+            <a href="#about" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> About </a>
+            <a href="#skills" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> Skills </a>
+            <a href="#portfolio" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> Portfolio </a>
+            <a href="#contact" class="p-3 text-[16px] sm:text-[18px] hover:text-[#F65023]"> Contact </a>
+            <button class="bg-white rounded-lg font-medium text-[#2E1853] text-[16px] sm:text-[18px] py-1 px-2 cursor-pointer hover:bg-[#483D8B]  hover:border border-x-white hover:text-[#b11010] shadow-md shadow-slate-800 transition">Hire Me!</button>
         </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden mt-4 cursor-pointer">
-    <ul class="flex flex-col gap-4 text-center">
-      <li><a class="text-base text-[#FFFFFF] hover:text-[#F65023]" href="#">Home</a></li>
-      <li><a class="text-base text-[#FFFFFF] hover:text-[#F65023]" href="#">About</a></li>
-      <li><a class="text-base text-[#FFFFFF] hover:text-[#F65023]" href="#">Skills</a></li>
-      <li><a class="text-base text-[#FFFFFF] hover:text-[#F65023]" href="#">Portfolio</a></li>
-      <li><a class="text-base text-[#FFFFFF] hover:text-[#F65023]" href="#">Contact</a></li>
-      <li>
-        <button class="w-[150px] my-2 bg-[#1e0244] px-4 py-2 rounded-lg text-white font-semibold hover:text-[#F65023] transition duration-300">
-          Hire Me
-        </button>
-      </li>
-    </ul>
-  </div>
+        <div id="nav-close" class="block sm:hidden">
+            <i class="fa-solid fa-bars text-white"></i>
+        </div>
+        
+        </div>
+        </div>
     </nav>
     
     <!-- Hero Section -->
-    <header class="relative w-full h-[700px] overflow-hidden">
+    <header id="home" class="relative w-full h-[700px] overflow-hidden">
         <!-- Background Video -->
         <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover opacity-80 z-0" src="assets/video.mp4" type="video/mp4">
         </video>
         <!-- Overlay Content -->
-        <div class="relative z-10  flex flex-col-reverse sm:flex-row items-center justify-center">
+        <div class="relative z-10 flex flex-col-reverse sm:flex-row items-center justify-center">
             
             <div class="container mx-auto shadow-md shadow-lime-50 rounded-lg px-10  border-t-0 sm:flex justify-around place-items-center text-center">
             <div class="hero text-white relative sm:w-[100%]">
                 <h1 class="text-[15px] md:text-3xl lg:text-4xl font-bold mb-4 pt-8 sm:pt-0 mt-10 sm:mt-0 sm:mb-4 sm:leading-14"> I'm a FrontEnd Developers_Stay With <br> <span class="text-[#F65023] text-[22px] sm:text-[36px]"> Shiful Islam </span></h1>
                 <div class="mt-5 sm:mt-10">
-                <a href="assets/Resume-Shiful.png" download class="download-btn cursor-pointer text-[16px] sm:text-xl font-medium text-gray-800 bg-[#FFFAF0] py-2 sm:py-3 px-4 sm:px-7 rounded-full  mb-10 sm:-mb-5 hover:bg-[#483D8B] hover:border border-x-[#b11010] hover:text-[#FFFFFF] shadow-md shadow-slate-800 transition duration-300"> Download CV <span class="text-[#F65023] font-mono font-medium text-[18px] sm:text-[20px]"> Learn More <svg class="w-7 inline-block animate-bounce "  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <a href="assets/Resume-Shiful.pdf" download class="download-btn cursor-pointer text-[16px] sm:text-xl font-medium text-gray-800 bg-[#FFFAF0] py-2 sm:py-3 px-4 sm:px-7 rounded-full  mb-10 sm:-mb-5 hover:bg-[#483D8B] hover:border border-x-[#b11010] hover:text-[#FFFFFF] shadow-md shadow-slate-800 transition duration-300"> Download CV <span class="text-[#F65023] font-mono font-medium text-[18px] sm:text-[20px]"> Learn More <svg class="w-7 inline-block animate-bounce "  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                 </svg>
             </span></a>
             </div>
 
-            <!-- Social Icons Section -->
+             <!-- Social Icons Section -->
             <div>
                 <ul class="flex justify-center md:flex sm:flex mt-10 sm:mt-10 gap-3 cursor-pointer animate-pulse">
                     <a href="https://www.facebook.com/AhmedShwapon">
@@ -97,48 +82,49 @@
                     </a>
                 </ul>
             </div>
+
             </div>
 
             <!-- Mushroom Viewer Model -->
             <div class="sm:w-[45%]">
             <section id="profile">
-            <model-viewer id="mushroom" class="w-[400px] md:[400px] lg:w-[550px] h-[300px] md:[300px] lg:h-[500px] m-auto inline-block shadow shadow-b-2" src="assets/mushroom.glb" alt="3D Mushroom" auto-rotate camera-controls disable-zoom shadow-intensity="0"
+            <model-viewer id="mushroom" class="w-[400px] sm:w-[550px] h-[300px] sm:h-[500px] m-auto inline-block shadow shadow-b-2" src="assets/mushroom.glb" alt="3D Mushroom" auto-rotate camera-controls disable-zoom shadow-intensity="0"
             disable-default-lighting reveal="auto" loading="eager">
             </model-viewer>
             </section>
 
             <!-- Firefly Viewer Model -->
-            <model-viewer id="firefly" class="fixed top-[50%] left-[50%] sm:left-[70%] sm:w-[50px] sm:h-[50px] pointer-events-none z-[999]" src="assets/firefly.glb" alt="3D Firefly"  loading="lazy" auto-rotate camera-controls disable-zoom style="transform: translate(-50%, -50%) scale(0.3);">
+            <!-- <model-viewer id="firefly" class="fixed top-[50%] left-[50%] sm:left-[70%] sm:w-[50px] sm:h-[50px] pointer-events-none z-[999]" src="assets/firefly.glb" alt="3D Firefly"  loading="lazy" auto-rotate camera-controls disable-zoom style="transform: translate(-50%, -50%) scale(0.3);">
             </model-viewer>
-            </div>
+            </div> -->
+   
         </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <div id="about" class="grid sm:flex justify-between items-center my-10 right-0 w-full min-h-screen mt-100 lg:mt-0 sm:mt-10">
+    <div id="about" class="grid sm:flex justify-between items-center my-10 right-0 w-full min-h-screen mt-60 sm:mt-10">
 
-        <!-- <video autoplay loop muted class="relative top-0 left-0 w-full h-[750px] object-cover opacity-80" src="assets/video.mp4" type="video/mp4">
-        </video> -->
-
-        <div class="absolute grid lg:flex lg:w-[100%] lg:h-[850px] justify-center items-center">
-            <div class="grid lg:flex justify-center w-[100%] lg:w-[50%]  items-end">
-            <img class="w-[300px] md:w-[375px] lg:w-[450px] animate-pulse shadow-md  rounded-full shadow-lime-50 md:mt-20 lg:mt-0 mb-6 lg:mb-0" src="assets/about.png" alt="">
+        <div class="absolute grid sm:flex sm:w-[100%] sm:h-[850px] justify-center items-center">
+            <div class="sm:w-[50%] grid sm:flex justify-center items-end">
+            <img class="w-[300px] sm:w-[450px] animate-pulse shadow-md  rounded-full shadow-lime-50 mt-20 sm:mt-0" src="assets/abouit.jpg" alt="">
         </div>
 
-        <div class="w-[100%] lg:w-[55%] grid justify-center items-center  p-8">
-           <h1 class="text-white font-bold text-[24px] sm:text-[32px] font-[poppins] mb-8 shadow-lg text-center sm:w-45 rounded-lg">About Me</h1>
+        <div class="w-[100%] sm:w-[55%] grid justify-center items-center  p-8">
+           <h1 class="text-white font-bold text-[24px] sm:text-[32px] font-[poppins] mb-5 shadow-lg text-center sm:w-45 rounded-lg">About Me</h1>
            <h2 class="text-[24px] font-semibold text-[#F65023] mb-5 ml-2 text-center sm:text-start">My Skills <i class="text-white fa-solid fa-fill-drip animate-pulse pl-2"></i></h2>
-           <p class="text-[16px] font-light text-[#e3e3e3] w-[100%]  border-b-2 border-[#F65023] pb-5 ">I’m a dedicated frontend web developer with solid experience in building fast, responsive, and interactive web applications using today’s most powerful tools. My core strength lies in Tailwind CSS, which I use to design clean, responsive user interfaces with precision and efficiency. It helps me build visually appealing layouts that are easy to maintain and scale. For dynamic and interactive functionality, I work primarily with JavaScript and React.js. React allows me to build reusable components and manage application state effectively, ensuring smooth and efficient user experiences. Expanding beyond the frontend, I also work with Node.js and Next.js to develop full-stack applications. Next.js enables server-side rendering and better performance, while Node.js handles backend operations and APIs. For database management, I use MongoDB, a flexible NoSQL database that supports scalable data structures. I also rely on Firebase for authentication, hosting, and real-time database features, which help me deploy and manage apps quickly. I enjoy turning ideas into functional, modern web solutions. My focus is on writing clean code, following best practices, and continuously learning new technologies to stay ahead in web development. <br> Let’s collaborate to bring your digital vision to life.</p>
+           <p class="text-[16px] font-light text-[#e3e3e3] lg:w-[80%] border-b-2 border-[#F65023] text-wrap lg:indent-15 pb-5"><span class="bg-red-500 text-black font-bold mr-1 px-1">I’m a dedicated frontend web developer </span> with solid experience in building fast, responsive, and interactive web applications using today’s most powerful tools. My core strength lies in Tailwind CSS, which I use to design clean, responsive user interfaces with precision and efficiency. It helps me build visually appealing layouts that are easy to maintain and scale. For dynamic and interactive functionality, I work primarily with JavaScript and React.js. React allows me to build reusable components and manage application state effectively, ensuring smooth and efficient user experiences. Expanding beyond the frontend, I also work with Node.js and Next.js to develop full-stack applications. Next.js enables server-side rendering and better performance, while Node.js handles backend operations and APIs. For database management, I use MongoDB, a flexible NoSQL database that supports scalable data structures. I also rely on Firebase for authentication, hosting, and real-time database features, which help me deploy and manage apps quickly. I enjoy turning ideas into functional, modern web solutions. My focus is on writing clean code, following best practices, and continuously learning new technologies to stay ahead in web development. <br> Let’s collaborate to bring your digital vision to life.</p>
         </div>
-        </div>   
+        </div>
+
+        
     </div>
 
     <!-- Skills Section -->
-    <section class="w-full h-[auto] lg:h-[850px] bg-none lg:bg-[url(/assets/portfolio-bg1.png)] bg-cover bg-center mt-60 md:mt-50 lg:mt-10">
-        <div id="skills" class="">
+    <section id="skills" class="relative bg-[url('/assets/portfolio-bg1.png')]      bg-cover bg-center mt-10 before:content-[''] before:absolute   before:inset-0 before:bg-[#2E1853] before:opacity-80">
         <div class="container mx-auto">
-            <h2 class="text-white text-4xl font-bold font-mono text-center mb-20 lg:mb-30"><svg class="w-7 inline-block text-[#F65023] animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+        <div class="">
+            <h2 class="text-white text-4xl font-bold font-mono text-center mb-30"><svg class="w-7 inline-block text-[#F65023] animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
             </svg>
             Relevant Skills </h2>
@@ -185,9 +171,9 @@
     </div>
     </section>
 
-    <!-- Relevant Work Section -->
-    <section class="bg-none lg:bg-[url(/assets/portfolio-bg.png)] bg-cover">
-        <div class="grid justify-center text-center mt-40">
+    <!-- Recent Work Section -->
+    <section id="portfolio">
+        <div class="grid justify-center relative z-10 text-center mt-40">
             <h2 class="text-white text-4xl font-bold font-mono  mb-8"><svg class="w-7 inline-block text-[#F65023] animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
             </svg>
@@ -195,13 +181,12 @@
             <p class="max-w-2xl text-[#fafafa] sm:text-[18px] text-center sm:mb-10">We are transform our ideas and desires into our responsive works.</p>
         </div>
 
-            <div class="relative lg:w-max mx-auto my-10 h-10 text-[10px] lg:text-[18px] grid grid-cols-4 items-center px-[2px] lg:px-[3px] rounded-full text-[#fafafa] bg-[#483D8B] font-semibold border border-lime-100 overflow-hidden transition md:h-12 md:text-base border-x-[#b11010]">
-
+        <div class="relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full text-[#fafafa] bg-[#483D8B] font-semibold border border-lime-100 overflow-hidden transition md:h-12 md:text-base border-x-[#b11010]">
             <!-- Indicator -->
-            <div class="indicator absolute h-9 lg:h-11 my-auto top-0 bottom-0 left-0 rounded-full bg-[#1e0244]">
+            <div class="indicator absolute h-9 my-auto top-0 bottom-0 left-0 rounded-full bg-[#1e0244] md:h-11">
             </div>
 
-            <button class="tab relative block h-8 lg:h-10 px-2 lg:px-6 rounded-full text-[#F65023] cursor-pointer" data-tab="all">All</button>
+            <button class="tab relative block h-8 px-3 rounded-full text-[#F65023] md:h-10 md:px-6 cursor-pointer" data-tab="all">All</button>
 
             <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6 cursor-pointer" data-tab="e-commerce">e-Commerce</button>
 
@@ -212,11 +197,10 @@
 
         <div class=" relative rounded-3xl mb-50 animate-pulse">
             <!-- Blob -->
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white mix-blend-screen rounded-full blur-[100px] opacity-50"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white mix-blend-screen rounded-full blur-[100px] opacity-100"></div>
 
             <ul class="grid grid-cols-1 gap-5 lg:gap-10 md:grid-cols-2 pt-20 container mx-auto items-center">
-
-                <!-- e_commerce -->
+                <!-- Recent Work -->
                 <li class="work_card e_commerce relative bg-white dark:bg-[#1e0244] p-2 rounded-2xl border border-transparent hover:border-[#fafafa] duration-300 overflow-hidden lg:p-8 cursor-pointer">
                     <img class="w-full" src="assets/projects/project1.jpeg" alt="recent works">
 
@@ -292,7 +276,7 @@
     </section>
 
     <!-- Contact Form -->
-    <div class="mb-30">
+    <div id="contact" class="mb-30">
         <div>
             <h2 class="text-white text-4xl font-bold font-mono text-center mb-30"><svg class="w-7 inline-block text-[#F65023] animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
@@ -300,8 +284,8 @@
             Contact Me </h2>
         </div>
 
-        <div class="grid lg:flex bg-[#1E0244] w-[100%] md:w-[80%] lg:w-[60%] lg:h-[600px] lg:gap-20 mx-auto justify-center items-center p-10 rounded-2xl">
-            <div id="text_form" class="grid grid-cols-1 md:[100%] lg:w-[50%] gap-10">
+        <div class="grid sm:flex bg-[#1E0244] w-[100%] sm:w-[60%] sm:h-[600px] sm:gap-20 mx-auto justify-center items-center p-10 rounded-2xl">
+            <div id="text_form" class="grid grid-cols-1 sm:w-[50%] gap-10">
                <div class="">
                   <h1 class="text-[#fafafa] text-2xl font-semibold font-[sora]">Get In Touch</h1>
                   <p class="text-[#fefefe] text-[16px] font-light mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eaque eligendi doloremque explicabo, at amet.</p>
@@ -309,7 +293,7 @@
 
                <div class="grid gap-3">
                   <div class="inline-flex space-x-2 items-center">
-                        <ion-icon class="text-[#008000] text-2xl" name="logo-whatsapp"></ion-icon>
+                        <ion-icon class="text-[#008000] text-2xl" name="call"></ion-icon>
                         <span class="text-[#fafafa] text-[16px]">+880 1711-037548</span>
                     </div>
                     <div class="inline-flex space-x-2 items-center">
@@ -323,15 +307,14 @@
                </div>
 
                <div class="flex space-x-3 text-2xl text-[#fafafa] mb-10 sm:mb-0">
-                    <a href="https://www.facebook.com/AhmedShwapon"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="https://www.linkedin.com/in/shiful-islam-7a9783250"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="https://github.com/shiful33"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.facebook.com/AhmedShwapon" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/shiful-islam-7a9783250/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/shiful33" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
                    </div>
             </div>
 
-            <div id="table_form" class="bg-white w-[100%] lg:w-[40%] h-[400px] mt-10 lg:mt-0 rounded-xl shadow-lg p-8">
+            <div id="table_form" class="bg-white sm:w-[40%] h-[400px]  rounded-xl shadow-lg p-8">
                <form action="https://api.web3forms.com/submit" method="POST" class="grid grid-cols-1 space-y-4">
-
     <!-- Required Access Key -->
     <input type="hidden" name="access_key" value="a5db407b-6dd0-4a47-9b29-39af72b07dac">
 
@@ -350,25 +333,25 @@
         <textarea name="message" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-purple-300 text-gray-800 text-[14px] mt-2" rows="4" placeholder="Type Message"></textarea>
     </div>
 
-    <button class="inline-block bg-[#F65023] self-center text-[#fafafa] text-xl font-medium py-2 px-4 rounded-lg cursor-pointer hover:bg-[#2e1853] transition duration-300">Send Message</button>
+    <button class="inline-block bg-[#F65023] self-center text-[#fafafa] text-xl font-medium py-2 px-4 rounded-lg cursor-pointer hover:bg-[#1E90FF] transition">Send Message</button>
 </form>
-        </div>
+            </div>
         </div>
     </div>
 
     <!-- Footer Section -->
     <div id="footer" class="bg-[#1E0244] py-30">
 
-        <div class="grid md:flex lg:flex justify-center items-center gap-12 md:gap-6 lg:m-0 lg:gap-10 md:m-6">
+        <div class="grid md:flex sm:dlex justify-center items-center gap-12 sm:gap-8 sm:m-0 sm:gap-10">
 
            <div>
-              <p class="text-[#F65023] font-mono text-3xl md:text-2xl font-bold animate-bounce text-start lg:text-center"> My Clients </p>
-              <h2 class="text-[#FFFFFF] text-lg md:text-xl lg:text-xl text-start lg:text-center">My Take Care of More <span class="underline underline-offset-8 decoration-orange-600">Than 50K</span> <br> Customers</h2>
+              <p class="text-[#F65023] font-mono text-3xl font-bold animate-bounce text-center"> My Clients </p>
+              <h2 class="text-[#FFFFFF] text-lg sm:text-xl md:text-2xl text-center">My Take Care of More <span class="underline underline-offset-8 decoration-orange-600">Than 50+</span> <br> Customers</h2>
            </div>
 
            <div class="grid sm:flex items-center">
               <div class="sm:px-8">
-                <ul class="text-lg md:text-lg sm:text-2xl">
+                <ul class="text-lg md:text-xl sm:text-2xl">
                     <li class="text-[#FFFFFF] ">
                         <a class="hover:text-gray-400" href="#">Career</a> <br>
                         <a class="hover:text-gray-400" href="#">Log In</a> <br>
@@ -385,37 +368,29 @@
               <h2 class="text-gray-400 text-sm md:text-lg sm:text-xl font-semibold">Support: <span class="underline underline-offset-8 decoration-orange-600">shwapon.joti@gmail.com</span> <br> (Available : 08:00am to 10:00pm) </h2>
            </div>
 
-           <!-- Footer Social Icons -->
-           <div class="text-start lg:text-center gap-8 sm:m-0 sm:gap-10 text-sm md:text-lg lg:text-xl font-semibold">
+           <div class="text-center gap-8 sm:m-0 sm:gap-10 text-sm md:text-lg sm:text-xl font-semibold">
             <h3 class="text-[#FFFFFF]">Follow Me</h3>
-            <div class="flex text-start lg:text-center md:flex sm:flex mt-4 gap-2 cursor-pointer animate-pulse">
-                <a href="https://www.facebook.com/AhmedShwapon">
-                    <img class="w-10 h-10" src="assets/icons/facebook.png" alt="icon-image">
+            <div class="flex justify-center md:flex sm:flex mt-4 gap-2 cursor-pointer animate-pulse">
+                <a href="https://www.facebook.com/AhmedShwapon" target="_blank">
+                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/facebook.png" alt="icon-image">
                 </a>
-                <a href="https://www.linkedin.com/in/shiful-islam-7a9783250/">
-                    <img class="w-10 h-10" src="assets/icons/linkedin.png" alt="icon-image">
+                <a href="https://www.linkedin.com/in/shiful-islam-7a9783250/" target="_blank">
+                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/linkedin.png" alt="icon-image">
                 </a>
-                <a href="https://app.netlify.com/teams/shiful33/projects">
-                    <img class="w-10 h-10" src="assets/icons/netlify-t.png" alt="icon-image">
+                <a href="https://app.netlify.com/teams/shiful33/projects" target="_blank">
+                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/netlify-t.png" alt="icon-image">
                 </a>
-                <a href="https://github.com/shiful33">
-                    <img class="w-10 h-10" src="assets/icons/github.png" alt="icon-image">
+                <a href="https://github.com/shiful33" target="_blank">
+                    <img class="w-9 sm:w-10/12 sm:h-10" src="assets/icons/github.png" alt="icon-image">
                 </a>
             </div>
            </div>
+
         </div>
     </div>
 
 
-    <!-- Add this JS at the bottom -->
-    <script>
-       const toggleBtn = document.getElementById('menu-toggle');
-       const mobileMenu = document.getElementById('mobile-menu');
-       toggleBtn.addEventListener('click', () => {
-       mobileMenu.classList.toggle('hidden');
-    });
-    </script>
-
+    
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
